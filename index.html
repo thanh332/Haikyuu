@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>HAIKYUU!! — FLY HIGH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a class="logo" href="#home">HAIKYUU<span>!!</span></a>
+
+    <nav id="navLinks">
+      <a href="#story">STORY</a>
+      <a href="#teams">TEAMS</a>
+      <a href="#players">PLAYERS</a>
+      <a href="#anime">ANIME</a>
+      <a href="#volleyball">VOLLEYBALL</a>
+      <a href="#challenge">CHALLENGE</a>
+      <a href="#quiz">QUIZ</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
+      ☰
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">THE COURT IS CALLING.</span>
+        <h1>
+          FLY<br>
+          <span>HIGH.</span>
+        </h1>
+        <p>
+          DREAM BIG. JUMP HIGHER. NEVER GIVE UP.
+        </p>
+        <p class="hero-description">
+          Willkommen in der Welt von HAIKYUU!!
+          Entdecke Karasuno, legendäre Rivalen und
+          die Leidenschaft für Volleyball.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn orange" href="#story">EXPLORE THE STORY ↗</a>
+          <a class="btn border-white" href="#challenge">LET'S PLAY ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-ring"></div>
+        <div class="big-number">10</div>
+        <div class="volleyball-ball">🏐</div>
+        <div class="hero-kanji">飛べ</div>
+        <span class="hero-stamp">KARASUNO HIGH</span>
+      </div>
+    </div>
+
+    <div class="hero-footer">
+      <span>EST. 2012 · HAIKYUU!!</span>
+      <span>SCROLL TO DISCOVER ↓</span>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="ticker-track">
+      FLY HIGH ✦ NEVER GIVE UP ✦ ONE TEAM ✦ ONE DREAM ✦
+      FLY HIGH ✦ NEVER GIVE UP ✦ ONE TEAM ✦ ONE DREAM ✦
+    </div>
+  </div>
+
+  <!-- STORY -->
+  <section id="story" class="section light">
+    <div class="section-heading">
+      <span class="section-number">01 / THE STORY</span>
+      <h2>SMALL PLAYER.<br><span>BIG DREAMS.</span></h2>
+      <p>
+        Ein kleiner Spieler mit einem riesigen Traum:
+        Shoyo Hinata will beweisen, dass man auch ohne
+        beeindruckende Körpergrösse grossartig Volleyball
+        spielen kann.
+      </p>
+    </div>
+
+    <div class="story-layout">
+      <div class="story-visual">
+        <div class="story-circle">烏野</div>
+        <div class="story-ball">🏐</div>
+        <span class="story-label">THE CROWS WILL FLY AGAIN.</span>
+      </div>
+
+      <div class="story-text">
+        <span class="small-orange">THE BEGINNING</span>
+        <h3>Ein Traum namens Karasuno.</h3>
+        <p>
+          Nachdem Hinata ein Volleyballspiel der Karasuno
+          High School gesehen hat, ist er fasziniert vom
+          sogenannten „Kleinen Giganten“.
+        </p>
+        <p>
+          Er beginnt selbst Volleyball zu spielen. Sein
+          erstes Turnier endet jedoch mit einer Niederlage
+          gegen Tobio Kageyama, einen talentierten Zuspieler.
+        </p>
+        <p>
+          An der Karasuno High School treffen sich die beiden
+          wieder – plötzlich als Teamkollegen!
+          Ihre Gegensätze werden zu einer ihrer grössten
+          Stärken.
+        </p>
+
+        <div class="stat-row">
+          <div><strong>45</strong><span>MANGA-BÄNDE</span></div>
+          <div><strong>4</strong><span>TV-STAFFELN</span></div>
+          <div><strong>2014</strong><span>ANIME-START</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAMS -->
+  <section id="teams" class="section black">
+    <div class="section-heading">
+      <span class="section-number">02 / RIVAL SCHOOLS</span>
+      <h2>ONE COURT.<br><span>MANY RIVALS.</span></h2>
+      <p>
+        Unterschiedliche Teams, unterschiedliche Stärken.
+        Aber alle kämpfen um denselben Traum.
+        Wähle eine Schule!
+      </p>
+    </div>
+
+    <div class="team-tabs" id="teamTabs">
+      <button class="team-tab active" data-team="karasuno">KARASUNO</button>
+      <button class="team-tab" data-team="nekoma">NEKOMA</button>
+      <button class="team-tab" data-team="aoba">AOBA JOHSAI</button>
+      <button class="team-tab" data-team="fukurodani">FUKURODANI</button>
+      <button class="team-tab" data-team="inarizaki">INARIZAKI</button>
+      <button class="team-tab" data-team="shiratorizawa">SHIRATORIZAWA</button>
+    </div>
+
+    <div class="team-showcase" id="teamShowcase">
+      <div class="team-emblem">🐦‍⬛</div>
+      <div class="team-details">
+        <span class="small-orange">MIYAGI PREFECTURE</span>
+        <h3>KARASUNO</h3>
+        <p>Die Krähen wollen wieder fliegen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARACTERS -->
+  <section id="players" class="section light">
+    <div class="section-heading">
+      <span class="section-number">03 / THE PLAYERS</span>
+      <h2>MEET THE<br><span>PLAYERS.</span></h2>
+      <p>
+        Wer steht auf dem Spielfeld?
+        Entdecke die Charaktere und ihre Stärken.
+      </p>
+    </div>
+
+    <div class="filter-row" id="playerFilters">
+      <button class="filter-btn active" data-filter="all">ALL PLAYERS</button>
+      <button class="filter-btn" data-filter="Karasuno">KARASUNO</button>
+      <button class="filter-btn" data-filter="Rivals">RIVALS</button>
+    </div>
+
+    <div class="player-grid" id="playerGrid"></div>
+  </section>
+
+  <!-- ANIME -->
+  <section id="anime" class="section orange-section">
+    <div class="section-heading">
+      <span class="section-number">04 / WATCH THE JOURNEY</span>
+      <h2>EVERY MATCH.<br><span>EVERY MOMENT.</span></h2>
+      <p>
+        Von den ersten Trainingsstunden bis zu den
+        grossen Turnieren: Die Reise von Karasuno.
+      </p>
+    </div>
+
+    <div class="season-grid" id="seasonGrid"></div>
+
+    <div class="next-film">
+      <span>COMING IN 2027</span>
+      <h3>HAIKYUU!! VS. THE LITTLE GIANT</h3>
+      <p>
+        Die nächste angekündigte Filmfortsetzung:
+        Karasuno trifft auf Kamomedai.
+      </p>
+    </div>
+  </section>
+
+  <!-- VOLLEYBALL -->
+  <section id="volleyball" class="section light">
+    <div class="section-heading">
+      <span class="section-number">05 / THE REAL SPORT</span>
+      <h2>UNDERSTAND<br><span>THE GAME.</span></h2>
+      <p>
+        Haikyuu!! macht Volleyball spannend.
+        Aber wie funktioniert der Sport eigentlich?
+      </p>
+    </div>
+
+    <div class="volley-facts">
+      <div><strong>6</strong><span>SPIELER AUF DEM FELD</span></div>
+      <div><strong>3</strong><span>TEAMBERÜHRUNGEN</span></div>
+      <div><strong>25</strong><span>PUNKTE PRO NORMALSATZ</span></div>
+      <div><strong>18 × 9</strong><span>METER SPIELFELD</span></div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <span class="small-orange">THE POSITIONS</span>
+        <h3 class="subheading">FIND YOUR POSITION.</h3>
+        <p>
+          Die Zahlen zeigen Rotationspositionen,
+          nicht feste Spielerrollen.
+          Klicke auf eine Position!
+        </p>
+
+        <div class="court">
+          <div class="court-net">NETZ</div>
+          <button class="court-player" data-pos="4">4</button>
+          <button class="court-player" data-pos="3">3</button>
+          <button class="court-player" data-pos="2">2</button>
+          <button class="court-player" data-pos="5">5</button>
+          <button class="court-player" data-pos="6">6</button>
+          <button class="court-player" data-pos="1">1</button>
+        </div>
+      </div>
+
+      <div class="position-panel" id="positionInfo">
+        <span class="small-orange">COURT POSITION</span>
+        <div class="position-emoji">🏐</div>
+        <h3>CHOOSE A POSITION</h3>
+        <p>
+          Tippe auf eine Zahl auf dem Spielfeld.
+          Hier erscheinen die Informationen.
+        </p>
+      </div>
+    </div>
+
+    <div class="roles">
+      <h3 class="subheading">PLAYER ROLES.</h3>
+      <div class="role-grid" id="roleGrid"></div>
+    </div>
+  </section>
+
+  <!-- TECHNIQUES -->
+  <section class="section charcoal">
+    <div class="section-heading">
+      <span class="section-number">06 / SKILLS & TECHNIQUES</span>
+      <h2>TRAIN HARD.<br><span>PLAY SMART.</span></h2>
+      <p>Die wichtigsten Techniken des Volleyballs.</p>
+    </div>
+    <div class="skill-grid" id="skillGrid"></div>
+  </section>
+
+  <!-- RULES -->
+  <section class="section light">
+    <div class="section-heading">
+      <span class="section-number">07 / GAME RULES</span>
+      <h2>KNOW<br><span>THE RULES.</span></h2>
+    </div>
+    <div class="rules-list" id="rulesList"></div>
+  </section>
+
+  <!-- CHALLENGE -->
+  <section id="challenge" class="section black">
+    <div class="section-heading">
+      <span class="section-number">08 / YOUR TURN</span>
+      <h2>STEP ON<br><span>THE COURT.</span></h2>
+      <p>Jetzt bist du dran! Spiele eine Aufschlag-Challenge.</p>
+    </div>
+
+    <div class="challenge-box">
+      <span class="small-orange">SERVE CHALLENGE</span>
+      <h3>CAN YOU SCORE?</h3>
+      <p>
+        Triff möglichst oft das Zielfeld.
+        Du hast zehn Aufschläge.
+      </p>
+
+      <div class="challenge-stats">
+        <span>VERSUCHE: <b id="attempts">0 / 10</b></span>
+        <span>TREFFER: <b id="hits">0</b></span>
+      </div>
+
+      <div class="mini-court" id="miniCourt">
+        <div class="mini-net"></div>
+        <div class="target" id="target">◎</div>
+        <div class="serve-ball" id="serveBall">🏐</div>
+      </div>
+
+      <p id="serveMessage">Bereit für deinen ersten Aufschlag?</p>
+
+      <button class="btn orange" id="serveBtn">SERVE THE BALL ↗</button>
+      <button class="btn border-white" id="serveReset">RESET</button>
+    </div>
+
+    <div class="scoreboard">
+      <span class="small-orange">MATCH SCOREBOARD</span>
+      <h3>KEEP THE SCORE.</h3>
+      <p>Zähle die Punkte für dein eigenes Volleyballmatch.</p>
+
+      <div class="score-layout">
+        <div class="score-team">
+          <span>KARASUNO</span>
+          <strong id="scoreA">00</strong>
+          <button class="btn orange" id="pointA">+ POINT</button>
+        </div>
+
+        <div class="score-vs">VS</div>
+
+        <div class="score-team">
+          <span>NEKOMA</span>
+          <strong id="scoreB">00</strong>
+          <button class="btn orange" id="pointB">+ POINT</button>
+        </div>
+      </div>
+
+      <p id="matchStatus">LET THE GAME BEGIN!</p>
+      <button class="btn border-white" id="resetMatch">↻ RESET MATCH</button>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="section orange-section">
+    <div class="section-heading">
+      <span class="section-number">09 / QUICK CHALLENGE</span>
+      <h2>ARE YOU A<br><span>HAIKYUU PRO?</span></h2>
+      <p>Teste dein Wissen über Haikyuu!! und Volleyball!</p>
+    </div>
+
+    <div class="quiz-card">
+      <div class="quiz-top">
+        <span>HAIKYUU!! QUIZ</span>
+        <span id="quizCounter">QUESTION 01 / 10</span>
+      </div>
+      <div class="quiz-progress">
+        <div id="quizBar"></div>
+      </div>
+      <h3 id="quizQuestion"></h3>
+      <div id="quizAnswers"></div>
+      <p id="quizFeedback" aria-live="polite"></p>
+      <button class="btn dark-btn" id="quizNext" hidden>NEXT QUESTION →</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a class="footer-logo" href="#home">HAIKYUU<span>!!</span></a>
+    <h2>KEEP FLYING.</h2>
+    <p>ONE TEAM. ONE DREAM. NEVER GIVE UP.</p>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    <small>
+      Fanprojekt über Haikyuu!! und Volleyball.
+      Keine offizielle Website.
+      Haikyuu!! gehört den jeweiligen Rechteinhabern.
+    </small>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
